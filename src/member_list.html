@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mem_list.css">    
+    <script src="../js/jquery-3.5.1.js"></script>
+    <script src="../js/myjs.js"></script>
+    <title>회원 목록</title>
+</head>
+<body onload="printMemberList();">
+    <header>
+        <h2>회원목록</h2>
+    </header>
+    <section>
+        <table id="memberTable">
+        </table>
+    </section>
+    <footer>
+        <input type="button" value="닫기" onclick="window.close();">
+    </footer>    
+
+    <!-- <script>
+        $(window).ready(function() {
+        // 왜 안될까..?
+            var reWidth = $("body").width() + (window.outerWidth - window.innerWidth);
+            var reHeight = $("body").height() + (window.outerHeight - window.innerHeight);
+
+            console.log(reWidth);
+            console.log(reHeight);
+
+            window.resizeTo(reWidth, reHeight);
+        });
+    </script> -->
+</body>
+</html>

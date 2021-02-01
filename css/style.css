@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'GongGothicLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body * {
+    font-family: 'GongGothicLight';
+}
+
+header{
+    background-color: #222831;
+    color: white;
+    border-radius: 15px 15px 0 0;
+}
+
+section {
+    background-color: #dddddd;
+}
+
+footer {
+    background-color: #30475e;
+    border-radius: 0 0 10px 10px;
+}

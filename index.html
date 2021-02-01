@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JiSu Homepage</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/indexStyle.css">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/myjs.js"></script>
+</head>
+<body onload="mainInit();">
+    <header>
+        <nav>
+            <h1><a href="index.html" style="text-decoration: none; color: #fff;">Welcome</a></h1>
+            <div class="topbar">
+                <div class="menubar">
+                    <img src="images/icons_menu.png" alt="" style="width: 50px; height: 50px; padding-top: 2px;" id="menu_icon">
+                    <ul>
+                        <li><a href="src/introduce.html" target="contents">자기소개</a></li>
+                        <li><a href="src/favorite.html" target="contents">관심사</a></li>
+                        <li><a href="src/develop_roadmap.html" target="contents">개발자 로드맵</a></li>
+                    </ul>
+                </div>
+                <form action="javascript:login();" id="login_form">
+                    <table id="login_table">
+                        <tr>
+                            <td><label for="userId">아이디 : </label></td>
+                            <td><input type="text" name="userId" id="userId"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="password">비밀번호 : </label></td>
+                            <td><input type="password" name="password" id="password"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: right;">
+                                <input type="submit" value="로그인">
+                                <input type="button" value="회원가입" id="join_btn">
+                                <input type="button" value="회원목록" id="member_list_btn">
+                            </td>
+                        </tr>                    
+                    </table>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <article style="width: 100%; height: 100%;">
+            <iframe src="" frameborder="0" name="contents" id="contents"></iframe>
+        </article>
+        
+        <aside class="ad">
+            <img src="images/ad_sample.png" alt="광고이미지">
+        </aside>
+    </section>
+
+    <footer>
+        <p align=center style="margin: 0; color: white;">Copyright 2021. Kim Ji Su. All rights reserved.</p>
+    </footer>
+    </body>
+</html>

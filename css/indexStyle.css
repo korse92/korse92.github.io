@@ -1,0 +1,111 @@
+body {
+    width: 1024px;
+    height: 768px;
+    margin: 100px auto;
+}
+
+header {
+    height: 18.5%;
+    padding: 10px;
+}
+
+nav h1 {
+    margin: 0;
+    padding: 12px 0;
+    text-align: center;
+    cursor: pointer;
+}
+.topbar {
+    display: flex;
+    justify-content: space-between;
+}
+.menubar #menu_icon {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.menubar {
+    display: flex;
+    justify-content: flex-start;
+    margin: auto 0;
+}
+.menubar ul {
+    display: none;
+    margin: 0;
+    padding: 1em 1em;
+    height: 20%;
+    list-style: none;
+    background-color: #f05454;
+    overflow: hidden;
+    white-space: nowrap;
+    border-radius: 30px;
+    box-shadow: 5px 6px 17px 0px grey;
+}
+.menubar ul li {
+    display: inline-block;
+    margin: auto 15px;
+}
+/* .menubar hover시 효과 */
+.menubar ul li a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+.menubar ul li a::before,
+.menubar ul li a::after {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+.menubar ul li a:before {
+    top: -5px;
+    transform: translateY(10px);
+}
+.menubar ul li a:after {
+    bottom: -5px;
+    transform: translateY(-10px);
+}
+.menubar ul li a:hover::before,
+.menubar ul li a:hover::after {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+section {
+    position: relative;
+    height: 71.5%;
+}
+
+iframe#contents {
+    width: 100%;
+    height: 100%;
+    display: block;    
+}
+
+.ad {
+    width: 120px;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: -134px;    
+}
+.ad img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+footer {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

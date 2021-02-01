@@ -1,0 +1,39 @@
+body {
+    width: 400px;
+    height: 400px;
+}
+
+header {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+td:first-of-type {
+    text-align: right;
+    padding-right: 30px;
+}
+
+footer {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 100px;
+    padding: 6px 0;
+    margin: 0 8px;
+}
+
+label {
+    width: 50px;
+}
